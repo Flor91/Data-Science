@@ -1,0 +1,260 @@
+2020-10-01 11:23:45,118 ¡ INFO >>> ********** Started ***********
+2020-10-01 11:23:45,174 ¡ INFO >>> ======== Met Dataset =========
+2020-10-01 11:23:45,175 ¡ INFO >>>    Unnamed: 0  Object Number  Is Highlight  Is Public Domain  ...  Metadata Date                                Repository                  Tags                                       Tags AAT URL
+0      297513  Inst.1980.3.1         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY           Abstraction          http://vocab.getty.edu/page/aat/300056508
+1      366196     175T49 R43          True             False  ...            NaN  Metropolitan Museum of Art, New York, NY                   NaN                                                NaN
+2      380983         WW.550         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY   Dragonflies|Flowers  http://vocab.getty.edu/page/aat/300310476|http...
+3      379184         WW.211         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY                Towers          http://vocab.getty.edu/page/aat/300004847
+4      472119     24.63.2060         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY                   NaN                                                NaN
+5      471850     2019.601.1         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY                   NaN                                                NaN
+6      380686         WW.484         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY                 Women          http://vocab.getty.edu/page/aat/300025943
+7      257613         WW.229         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY         Women|Fashion  http://vocab.getty.edu/page/aat/300025943|http...
+8        5967  Inst.67.15.49         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY                   NaN                                                NaN
+9      297448       x.165.13         False             False  ...            NaN  Metropolitan Museum of Art, New York, NY  Weights and Measures          http://vocab.getty.edu/page/aat/300386648
+
+[10 rows x 52 columns]
+2020-10-01 11:23:45,221 ¡ INFO >>> 
+Dataset has 4743 rows and 52 columns
+
+2020-10-01 11:23:45,221 ¡ INFO >>> ======== Null Columns ========
+2020-10-01 11:23:45,237 ¡ INFO >>>                           Total  Percentage
+Unnamed: 0                  0.0    0.000000
+Object Number               0.0    0.000000
+Is Highlight                0.0    0.000000
+Is Public Domain            0.0    0.000000
+Is Timeline Work            0.0    0.000000
+Object ID                   0.0    0.000000
+Department                  0.0    0.000000
+AccessionYear            1000.0    0.210837
+Object Name                88.0    0.018554
+Title                     829.0    0.174784
+Culture                  2425.0    0.511280
+Period                   3424.0    0.721906
+Dynasty                  4559.0    0.961206
+Reign                    4672.0    0.985031
+Portfolio                4599.0    0.969639
+Artist Role              2359.0    0.497365
+Artist Prefix            4007.0    0.844824
+Artist Display Name      2345.0    0.494413
+Artist Display Bio       2631.0    0.554712
+Artist Suffix            4664.0    0.983344
+Artist Alpha Sort        2345.0    0.494413
+Artist Nationality       3169.0    0.668143
+Artist Begin Date        2646.0    0.557875
+Artist End Date          2655.0    0.559772
+Artist Gender            3751.0    0.790850
+Artist ULAN URL          2964.0    0.624921
+Artist Wikidata URL      3430.0    0.723171
+Object Date              1570.0    0.331014
+Object Begin Date           0.0    0.000000
+Object End Date             0.0    0.000000
+Medium                    132.0    0.027830
+Dimensions                508.0    0.107105
+Credit Line                60.0    0.012650
+Geography Type           4210.0    0.887624
+City                     4481.0    0.944761
+State                    4725.0    0.996205
+County                   4674.0    0.985452
+Country                  4081.0    0.860426
+Region                   4536.0    0.956357
+Subregion                4609.0    0.971748
+Locale                   4663.0    0.983133
+Locus                    4712.0    0.993464
+Excavation               4670.0    0.984609
+River                    4731.0    0.997470
+Classification            450.0    0.094877
+Rights and Reproduction  4615.0    0.973013
+Link Resource               0.0    0.000000
+Object Wikidata URL      4526.0    0.954248
+Metadata Date            4743.0    1.000000
+Repository                  0.0    0.000000
+Tags                     2487.0    0.524352
+Tags AAT URL             2487.0    0.524352
+2020-10-01 11:23:45,243 ¡ INFO >>> ==== Object Date Columns =====
+2020-10-01 11:23:45,244 ¡ INFO >>> 19th century          130
+18th century           80
+17th century           65
+1912                   54
+1911                   50
+                     ... 
+1931–50                 1
+ca. 1530–50             1
+1845–59                 1
+ca. 1635–1458 B.C.      1
+1750–75                 1
+Name: Object Date, Length: 1378, dtype: int64
+2020-10-01 11:23:45,245 ¡ INFO >>> 
+Unique values 1379
+
+2020-10-01 11:23:45,246 ¡ INFO >>> Null values 1570
+
+2020-10-01 11:23:45,255 ¡ INFO >>>                             Object Date Object Date Clean
+0                          20th century              None
+1                                  1642              1642
+2                                  1911              1911
+3                                  1909              1909
+4                         June 20, 1867              1867
+...                                 ...               ...
+4738                  1782, 2nd edition              1782
+4739                           ca. 1938              1938
+4740  3rd century B.C.–A.D. 4th century              None
+4741                               1669              1669
+4742                           ca. 1925              1925
+
+[4743 rows x 2 columns]
+2020-10-01 11:23:45,367 ¡ INFO >>>                             Object Date Object Date Clean
+0                          20th century              1900
+1                                  1642              1642
+2                                  1911              1911
+3                                  1909              1909
+4                         June 20, 1867              1867
+...                                 ...               ...
+4738                  1782, 2nd edition              1782
+4739                           ca. 1938              1938
+4740  3rd century B.C.–A.D. 4th century              None
+4741                               1669              1669
+4742                           ca. 1925              1925
+
+[4743 rows x 2 columns]
+2020-10-01 11:23:45,456 ¡ INFO >>>                             Object Date Object Date Clean
+0                          20th century              1900
+1                                  1642              1642
+2                                  1911              1911
+3                                  1909              1909
+4                         June 20, 1867              1867
+...                                 ...               ...
+4738                  1782, 2nd edition              1782
+4739                           ca. 1938              1938
+4740  3rd century B.C.–A.D. 4th century              None
+4741                               1669              1669
+4742                           ca. 1925              1925
+
+[4743 rows x 2 columns]
+2020-10-01 11:23:45,462 ¡ INFO >>>                             Object Date Object Date Clean
+15                 1st–2nd century A.D.              None
+28                      4th–7th century              None
+42                      4th–7th century              None
+47             ca. 7th–6th century B.C.              None
+60                      4th–7th century              None
+...                                 ...               ...
+4677               1st–2nd century A.D.              None
+4701                   5th century B.C.              None
+4726  late 6th/early 5th centuries B.C.              None
+4737               4th–3rd century B.C.              None
+4740  3rd century B.C.–A.D. 4th century              None
+
+[257 rows x 2 columns]
+2020-10-01 11:23:45,467 ¡ INFO >>> ==== Object Date Columns =====
+2020-10-01 11:23:45,468 ¡ INFO >>> 19th century          130
+18th century           80
+17th century           65
+1912                   54
+1911                   50
+                     ... 
+1931–50                 1
+ca. 1530–50             1
+1845–59                 1
+ca. 1635–1458 B.C.      1
+1750–75                 1
+Name: Object Date, Length: 1378, dtype: int64
+2020-10-01 11:23:45,469 ¡ INFO >>> 
+Unique values 1379
+
+2020-10-01 11:23:45,469 ¡ INFO >>> Null values 1570
+
+2020-10-01 11:23:45,469 ¡ INFO >>> = Object Date Clean Columns ==
+2020-10-01 11:23:45,471 ¡ INFO >>> 0       1570
+1800     225
+1700     144
+1600      82
+1900      76
+        ... 
+1798       1
+1664       1
+250        1
+1804       1
+1701       1
+Name: Object Date Clean, Length: 494, dtype: int64
+2020-10-01 11:23:45,472 ¡ INFO >>> 
+Unique values 495
+
+2020-10-01 11:23:45,472 ¡ INFO >>> Null values 257
+
+2020-10-01 11:23:45,472 ¡ INFO >>> === AccessionYear Columns ====
+2020-10-01 11:23:45,473 ¡ INFO >>> 1963          220
+1917          140
+1874          126
+1929           99
+2011           98
+             ... 
+1873            1
+2020-03-23      1
+2005-02-15      1
+1892            1
+1986-12-29      1
+Name: AccessionYear, Length: 142, dtype: int64
+2020-10-01 11:23:45,474 ¡ INFO >>> 
+Unique values 143
+
+2020-10-01 11:23:45,474 ¡ INFO >>> Null values 1000
+
+2020-10-01 11:23:45,478 ¡ INFO >>> object
+2020-10-01 11:23:45,479 ¡ INFO >>> = AccessionYearClean Columns =
+2020-10-01 11:23:45,480 ¡ INFO >>> 0       1000
+1963     220
+1917     140
+1874     126
+1929      99
+        ... 
+1901       2
+1873       1
+2020       1
+1871       1
+1892       1
+Name: AccessionYearClean, Length: 141, dtype: int64
+2020-10-01 11:23:45,481 ¡ INFO >>> 
+Unique values 141
+
+2020-10-01 11:23:45,481 ¡ INFO >>> Null values 0
+
+2020-10-01 11:23:45,481 ¡ INFO >>> === Artist Gender Columns ====
+2020-10-01 11:23:45,482 ¡ INFO >>> |                           583
+||                          170
+Female                       81
+Female|                      43
+|||                          41
+|Female                      23
+||||                         20
+||||||                        7
+|||||                         3
+Female||                      3
+|||||||                       3
+Female||Female                2
+|||||||||||                   2
+|Female|                      2
+||||||||                      1
+|Female||                     1
+||Female                      1
+Female|Female                 1
+|||Female|||||                1
+|||||||||||||||Female|||      1
+|||||||||||||||||             1
+|Female|Female|||Female       1
+||Female|                     1
+Name: Artist Gender, dtype: int64
+2020-10-01 11:23:45,483 ¡ INFO >>> 
+Unique values 24
+
+2020-10-01 11:23:45,483 ¡ INFO >>> Null values 3751
+
+2020-10-01 11:23:45,496 ¡ INFO >>> = ArtistGenderClean Columns ==
+2020-10-01 11:23:45,497 ¡ INFO >>> Unknown    3751
+Male        831
+Female      161
+Name: ArtistGenderClean, dtype: int64
+2020-10-01 11:23:45,498 ¡ INFO >>> 
+Unique values 3
+
+2020-10-01 11:23:45,498 ¡ INFO >>> Null values 0
+
+2020-10-01 11:23:45,499 ¡ INFO >>> ********** Finished **********
