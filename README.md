@@ -1,35 +1,89 @@
 
-# Data Science
+# Day 1
 
-![data-science](https://as1.ftcdn.net/jpg/02/09/21/48/500_F_209214808_hGRtgY7FkyigiC7m2ZdUWU6GnXZi81Cf.jpg)
+On this first day of x days of data I started easy by doing some [Meta Learning](https://webbswideworld.com/2019/09/09/the-principles-of-ultralearning-1-metalearning/), inspired by [#66DaysOfData](https://www.youtube.com/watch?v=qV_AlRwhI3I).
 
-## Zen of Python
+![img.png](daysofdata/resources/img.png)
 
-![zen](https://github.com/ewjoachim/zen-of-python/blob/master/zen_web.png?raw=true)
+### 1 - Watched some Youtube videos:
+- [Step By Step Action Plan For Learning Data Science](https://www.youtube.com/watch?v=lP1hb4BFAWA&t=2s) By [Krish Naik](https://www.youtube.com/user/krishnaik06)
+- [How I would learn data science in 2021](https://www.youtube.com/watch?v=41Clrh6nv1s) By [Ken Jee](https://www.youtube.com/c/KenJee1)
+- [How to ULTRALEARN Data Science](https://www.youtube.com/watch?v=a3VWq9smqhM)
+- [The 5 Stages of Learning Data Science](https://www.youtube.com/watch?v=hpMc6TgT34I)
 
-## Modules
+### 2 - Completed [Kaggle's Python](https://www.kaggle.com/learn/python) course
+Review Python concepts needed for Data Science and Machine learning.
 
-1. 🐍 Python Fundamentals for Data Science
-    - [Advanced String manipulation](1-python/strings.py)
-    - [List, Set & Dictionary Comprehensions](1-python/comprehensions.py)
-    - [File management](1-python/files.py)
-    - [Itertools Library](1-python/itertools.py)
-    - [Regex](1-python/regex.py)
+![data-science](daysofdata/certificates/Python.png)
 
-2. Python Functions review
-    - [🏎️  Create a Car class and import it form another program](2-functions)
+### 3 - Started [Kaggle's Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course
 
-3. Numpy
-    - [Create random binomial and uniform distributions](3-numpy/random_distributions.py)
-    - [Numpy Indexing](3-numpy/np_indexing.py)
-    - [Numpy Vectorization](3-numpy/np_vectorizacion.py)
-    - [Get stats from a population loaded from file](3-numpy/population_stats.py)
-    - [Analyze sales data](3-numpy/sales_data.py)
+Learn the core ideas in machine learning, and build my first models.
+   1. How models work
+   2. Basic Data Exploration
+   3. First ML Model
+   4. Model Validation
+   5. Underfitting and Overfitting
+   6. Random Forest
+   7. ML Competitions
 
-4. 🐼 Pandas
-    - [Use pandas to analyze INDEC Census data](4-pandas/pd_data_fit.py)
+### Notes
+#### Learning Data Science Roadmap 🛣️
+1. Programming Language
+    - Select one (Python, R, Java...) I will work with Python.
+    - Data Structures, Functions, OOPS, Exception handling, List comprehension, external libraries
+2. Python Libraries to work with complex data structures
+    - Numpy
+    - Pandas
+3. Statistics and Probability
+    - Basic concepts: Mean, Median, Mode...
+    - Distributions: Normal, Standard, ...
+4. Visualization
+    - MatplotLib
+    - Seaborn
+5. Exploratory Data Analysis (EDA)
+    - Feature engineering
+    - Cleaning data
+    - Data formating, Normalization: Scalers
+6. Machine Learning algorithms
+    - understand theory and concepts behind each of the top 20 basic algorithms
+7. Deployment
+    - AWS, GCP, Heroku
+    - Flask, FastAPI, Django
+    - Docker, Kubernetes
+8. Deep Learning
+     - 3 basic Neural Algos: Aritifical(ANN),Convolutional(CNN) & Recurrent(RNN)
+     - TensorFlow, Keras, Pytorch
+9. Databases:
+     - SQL for structured data
+     - MongoDB for unstructured data
+10. Visualization:
+     - PowerBI
+     - Tableau
+     - Qlik Sense
 
-5. Data Cleansing 🧹
-    - [Clean up Melbourne city dataset](5-data-cleansing/clean.py)
-    - [Clean up MET dataset](5-data-cleansing/clean_met.py) + [Output](5-data-cleansing/clean_met.log)
+---
 
+# Day 2 & 3
+
+Working on [Music Genre Recognition APP](https://github.com/Flor91/digital-house-challenge-3), 
+a FastAPI app that recognizes music genres based on an Spotify URI.
+
+![img.png](daysofdata/resources/music_rec_app.png)
+
+![img_1.png](daysofdata/resources/music_rec_app2.png)
+
+
+Technologies used:
+- [FastAPI](https://fastapi.tiangolo.com/): modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
+- [OpenAPI](https://github.com/OAI/OpenAPI-Specification): (ex. Swagger) The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. 
+- [Starlette](https://www.starlette.io/): Starlette is a lightweight ASGI framework/toolkit, which is ideal for building high performance asyncio services.
+- [Pydantic](https://pydantic-docs.helpmanual.io/): Data validation and settings management using python type annotations.
+- [SQLAlchemy](https://www.sqlalchemy.org/): SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
+- [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/): modern and designer-friendly templating language for Python, modelled after Django’s templates. 
+- [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/): world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+
+For data processing:
+- [Librosa](https://librosa.org/): Audio and music processing with Python
+- [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): lightweight Python library for the [Spotify Web API](https://developer.spotify.com/documentation/web-api/). 
+- [pydub](https://github.com/jiaaro/pydub):  Manipulate audio with a simple and easy high level interface
