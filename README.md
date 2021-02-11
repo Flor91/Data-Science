@@ -1,7 +1,14 @@
+# Days of Data
 
-# Day 1
+This is my journey into x days of data, where I will learn about Data Science, Machine Learning and Deep Learning technologies.
 
-On this first day of x days of data I started easy by doing some [Meta Learning](https://webbswideworld.com/2019/09/09/the-principles-of-ultralearning-1-metalearning/), inspired by [#66DaysOfData](https://www.youtube.com/watch?v=qV_AlRwhI3I).
+I won't be committing to an exact number of days or to working on this every day - not even for 5 minutes, sorry - because of life (I am expecting a baby boy!).
+
+But I encourage anyone interested on this challenge to follow the rules set up by [#66DaysOfData](https://www.youtube.com/watch?v=qV_AlRwhI3I).
+
+## Day 1
+
+On this first day of x days of data I started easy by doing some [Meta Learning](https://webbswideworld.com/2019/09/09/the-principles-of-ultralearning-1-metalearning/).
 
 ![img.png](daysofdata/resources/img.png)
 
@@ -64,7 +71,7 @@ Learn the core ideas in machine learning, and build my first models.
 
 ---
 
-# Day 2 & 3
+## Day 2 & 3
 
 Working on [Music Genre Recognition APP](https://github.com/Flor91/digital-house-challenge-3), 
 a FastAPI app that recognizes music genres based on an Spotify URI.
@@ -74,7 +81,7 @@ a FastAPI app that recognizes music genres based on an Spotify URI.
 ![img_1.png](daysofdata/resources/music_rec_app2.png)
 
 
-Technologies used:
+#### Technologies used:
 - [FastAPI](https://fastapi.tiangolo.com/): modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 - [OpenAPI](https://github.com/OAI/OpenAPI-Specification): (ex. Swagger) The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. 
 - [Starlette](https://www.starlette.io/): Starlette is a lightweight ASGI framework/toolkit, which is ideal for building high performance asyncio services.
@@ -83,7 +90,7 @@ Technologies used:
 - [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/): modern and designer-friendly templating language for Python, modelled after Django’s templates. 
 - [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/): world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
 
-For data processing:
+#### For data processing:
 - [Librosa](https://librosa.org/): Audio and music processing with Python
 - [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): lightweight Python library for the [Spotify Web API](https://developer.spotify.com/documentation/web-api/). 
 - [pydub](https://github.com/jiaaro/pydub):  Manipulate audio with a simple and easy high level interface
