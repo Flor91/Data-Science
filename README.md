@@ -2,7 +2,7 @@
 
 This is my journey into x days of data, where I will learn about Data Science, Machine Learning and Deep Learning technologies.
 
-I won't be committing to an exact number of days or to working on this every day - not even for 5 minutes, sorry - because of life (I am expecting a baby boy!).
+I won't be committing to an exact number of days, or even trying to work on this every day - not even for 5 minutes, sorry - because of life (I am expecting a baby boy!).
 
 But I encourage anyone interested on this challenge to follow the rules set up by [#66DaysOfData](https://www.youtube.com/watch?v=qV_AlRwhI3I).
 
@@ -26,13 +26,6 @@ Review Python concepts needed for Data Science and Machine learning.
 ### 3 - Started [Kaggle's Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course
 
 Learn the core ideas in machine learning, and build my first models.
-   1. How models work
-   2. Basic Data Exploration
-   3. First ML Model
-   4. Model Validation
-   5. Underfitting and Overfitting
-   6. Random Forest
-   7. ML Competitions
 
 ### Notes
 #### Learning Data Science Roadmap 🛣️
@@ -94,3 +87,86 @@ a FastAPI app that recognizes music genres based on an Spotify URI.
 - [Librosa](https://librosa.org/): Audio and music processing with Python
 - [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): lightweight Python library for the [Spotify Web API](https://developer.spotify.com/documentation/web-api/). 
 - [pydub](https://github.com/jiaaro/pydub):  Manipulate audio with a simple and easy high level interface
+
+---
+
+## Day 4
+
+### 3 - Continued [Kaggle's Intro to Machine Learning](https://www.kaggle.com/learn/intro-to-machine-learning) course
+
+   #### 1. How models work                  ✔️
+      
+   The step of capturing patterns from data is called fitting or training the model. 
+   The data used to fit the model is called the training data.
+   After the model has been fit, we can use it to predict new data.
+      
+   #### 2. Basic Data Exploration           ✔️
+   ```python
+   # save filepath to variable for easier access
+   melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv'
+   # read the data and store data in DataFrame titled melbourne_data
+   melbourne_data = pd.read_csv(melbourne_file_path) 
+   # print a summary of the data in Melbourne data
+   melbourne_data.describe()
+   
+   melbourne_data.columns    
+   ```
+
+   #### 3. First ML Model                   ✔️
+   The column we want to predict is the target (y).
+   The columns used to make the predictions, inputted into our model are the features (X).
+   
+   The steps to building and using a model are:
+   
+   - Define: What type of model will it be? A decision tree? Some other type of model? Some other parameters of the model type are specified too.
+   - Fit: Capture patterns from provided data. This is the heart of modeling.
+   - Predict: Just what it sounds like
+   - Evaluate: Determine how accurate the model's predictions are.
+
+   #### 4. Model Validation
+   There are several metrics for summarizing model quality. The first one we will see is:
+   - Mean Absolute Error (MAE): On average how off our predictions are from the real value.
+
+   ```python
+    from sklearn.model_selection import train_test_split
+    import pandas as pd
+   from sklearn.tree import DecisionTreeRegressor
+   
+   # Path of the file to read
+   iowa_file_path = '../input/home-data-for-ml-course/train.csv'
+   
+   home_data = pd.read_csv(iowa_file_path)
+   y = home_data.SalePrice
+   feature_columns = ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
+   X = home_data[feature_columns]
+
+   # split data into training and validation data, for both features and target
+   # The split is based on a random number generator. Supplying a numeric value to
+   # the random_state argument guarantees we get the same split every time we
+   # run this script.
+   train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+   
+   # Specify Model
+   iowa_model = DecisionTreeRegressor()
+   # Fit Model
+   iowa_model.fit(train_X, train_y)
+   
+   print("First in-sample predictions:", iowa_model.predict(val_X.head()))
+   print("Actual target values for those homes:", val_y.head().tolist())
+
+   # get predicted prices on validation data
+   val_predictions = .predict(val_X)
+   print(mean_absolute_error(val_y, val_predictions))
+   ```
+   
+   #### 5. Underfitting and Overfitting
+   Overfitting, where a model matches the training data almost perfectly, but does poorly in validation and other new data.
+   When a model fails to capture important distinctions and patterns in the data, so it performs poorly even in training data, that is called underfitting.
+
+   
+   #### 6. Random Forest
+   #### 7. ML Competitions
+
+[Submited notebook](https://www.kaggle.com/flor991/exercise-machine-learning-competitions)
+
+![certificate](daysofdata/certificates/Intro%20to%20Machine%20Learning.png)
